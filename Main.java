@@ -73,7 +73,7 @@ public class TasksSolution {
         int choice = scanner.nextInt();
         switch (choice) {
             case 1:
-                System.out.println("Task 1 Anagram Sort Checker");
+                System.out.println("task 1");
                 System.out.print("Enter first string ");
                 String str1 = scanner.next();
                 System.out.print("Enter second string ");
@@ -81,7 +81,7 @@ public class TasksSolution {
                 System.out.println("Output " + checkAnagram(str1, str2));
                 break;
             case 2:
-                System.out.println("Task 2 K-th Smallest Element");
+                System.out.println("task 2");
                 System.out.print("Enter array size ");
                 int size2 = scanner.nextInt();
                 int[] arr2 = new int[size2];
@@ -94,7 +94,7 @@ public class TasksSolution {
                 System.out.println("Output " + findKthSmallest(arr2.clone(), k));
                 break;
             case 3:
-                System.out.println("Task 3 Median Element");
+                System.out.println("task 3");
                 System.out.print("Enter array size ");
                 int size3 = scanner.nextInt();
                 int[] arr3 = new int[size3];
@@ -105,7 +105,7 @@ public class TasksSolution {
                 System.out.println("Output " + findMedian(arr3.clone()));
                 break;
             case 4:
-                System.out.println("Task 4 Optimal Shipping Capacity");
+                System.out.println("task 4");
                 System.out.print("Enter number of packages ");
                 int n = scanner.nextInt();
                 int[] weights = new int[n];
