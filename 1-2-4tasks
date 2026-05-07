@@ -1,0 +1,48 @@
+Task 1
+1) Visit A - Stack: [A]
+2) From A, visit first unvisited neighbor C - Stack: [A, C]
+3) From C, visit first unvisited neighbor B - Stack: [A, C, B]
+4) From B, visit first unvisited neighbor E - Stack: [A, C, B, E]
+5) From E, visit first unvisited neighbor G - Stack: [A, C, B, E, G]
+6) From G, visit first unvisited neighbor F - Stack: [A, C, B, E, G, F]
+7) F has no unvisited neighbors, backtrack
+8) G has no unvisited neighbors, backtrack
+9) E has no unvisited neighbors, backtrack
+10) B has no unvisited neighbors, backtrack
+11) C has no unvisited neighbors, backtrack
+12) From A, visit remaining unvisited neighbor D - Stack: [A, D]
+13) D has no unvisited neighbors, backtrack
+14) Done
+DFS Visit Order: A - C - B - E - G - F - D
+
+
+
+Task 2
+1. Enqueue A, Queue: [A], Visited: {A}
+2. Dequeue A, visit neighbors C, B, D
+   Queue: [C, B, D], Visited: {A, C, B, D}
+3. Dequeue C, neighbors A, B, D already visited
+   Queue: [B, D]
+4. Dequeue B, visit unvisited neighbors E, G
+   Queue: [D, E, G], Visited: {A, C, B, D, E, G}
+5. Dequeue D, neighbors C, A already visited
+   Queue: [E, G]
+6. Dequeue E, visit unvisited neighbor F
+   Queue: [G, F], Visited: {A, C, B, D, E, G, F}
+7. Dequeue G, neighbors F, B already visited
+   Queue: [F]
+8. Dequeue F, neighbors G, E already visited
+   Queue: []
+9. Done
+BFS Visit Order: A - C - B - D - E - G - F
+
+
+
+Task 4
+Possible paths from Edinburgh to Dundee:
+
+1) Edinburgh - Perth - Dundee: 100 + 60 = 160
+2) Edinburgh - Stirling - Perth - Dundee: 50 + 40 + 60 = 150
+3) Edinburgh - Glasgow - Stirling - Perth - Dundee: 70 + 50 + 40 + 60 = 220
+
+Shortest Path: Edinburgh - Stirling - Perth - Dundee (150)
